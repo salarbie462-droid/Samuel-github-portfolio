@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Samuel Odame Adjei-Larbi — IT, technology and developer portfolio.">
+<title>Samuel Odame Adjei-Larbi | Developer Portfolio</title>
+<style>
+:root{--bg:#080b12;--panel:#0e131d;--panel2:#111824;--text:#f5f7fb;--muted:#9ca8ba;--green:#39d353;--blue:#58a6ff;--border:#263142;--max:1120px}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(8,11,18,.9);backdrop-filter:blur(15px);border-bottom:1px solid var(--border)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;font-size:1.05rem}.brand b{color:var(--green)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--text)}
+.hero{padding:110px 0 90px;background:radial-gradient(circle at 80% 20%,rgba(57,211,83,.09),transparent 28%),radial-gradient(circle at 20% 0,rgba(88,166,255,.08),transparent 30%)}
+.terminal{display:inline-block;border:1px solid var(--border);border-radius:8px;background:#0b1018;padding:7px 11px;color:var(--green);font-family:monospace;font-size:.88rem}
+h1{font-size:clamp(3rem,7vw,5.8rem);line-height:1;margin:22px 0 18px;letter-spacing:-3px}h1 span{color:var(--blue)}
+.lead{max-width:760px;color:var(--muted);font-size:1.18rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 17px;border:1px solid var(--border);border-radius:9px;font-weight:700}.primary{background:var(--green);color:#071008;border-color:var(--green)}.primary:hover{filter:brightness(1.08)}.secondary:hover{border-color:#53627a}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:55px}.stat{padding:18px;border:1px solid var(--border);background:var(--panel);border-radius:12px}.stat strong{font-size:1.4rem;display:block}.stat span{color:var(--muted);font-size:.86rem}
+section{padding:85px 0}.eyebrow{color:var(--green);font-family:monospace;font-size:.85rem}.title{font-size:2.1rem;margin:8px 0}.intro{color:var(--muted);max-width:700px;margin-bottom:32px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:23px;transition:.2s}.card:hover{transform:translateY(-3px);border-color:#3d4b60}.card h3{margin:0 0 8px}.card p{color:var(--muted);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.tag{font-family:monospace;font-size:.78rem;color:#c8d1df;background:#0a0f17;border:1px solid var(--border);padding:5px 8px;border-radius:6px}
+.project{min-height:260px;display:flex;flex-direction:column}.project .foot{margin-top:auto;padding-top:20px}.project a{color:var(--blue);font-weight:700}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.codebox{font-family:monospace;background:#070a10;border:1px solid var(--border);border-radius:14px;padding:23px;color:#c9d1d9;overflow:auto}.codebox .key{color:#ff7b72}.codebox .value{color:#a5d6ff}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact a{color:var(--blue)}
+footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);font-size:.9rem}
+@media(max-width:780px){.navlinks{display:none}.grid,.stats,.about,.contact{grid-template-columns:1fr}h1{letter-spacing:-2px}.hero{padding-top:80px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="brand" href="#home">samuelodame<span>.dev</span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header id="home" class="hero"><div class="container">
+<div class="terminal">$ whoami → Samuel Odame Adjei-Larbi</div>
+<h1>IT Student.<br><span>Developer.</span> Builder.</h1>
+<p class="lead">I’m Samuel Odame Adjei-Larbi, an aspiring technology professional interested in software, computer systems, web development and business technology. This portfolio documents the projects and skills I’m building along the way.</p>
+<div class="buttons"><a class="btn primary" href="#projects">View Projects ↓</a><a class="btn secondary" href="https://github.com/samuelodame" target="_blank" rel="noopener">◉ GitHub</a><a class="btn secondary" href="mailto:salarbie462@gmail.com">✉ Contact</a></div>
+<div class="stats"><div class="stat"><strong>IT & Tech</strong><span>Academic focus</span></div><div class="stat"><strong>Projects</strong><span>Hands-on learning</span></div><div class="stat"><strong>2026</strong><span>Portfolio edition</span></div></div>
+</div></header>
+
+<section id="about"><div class="container">
+<span class="eyebrow">01 / ABOUT</span><h2 class="title">Building practical technology skills.</h2>
+<div class="about">
+<div><p class="intro">I enjoy learning how technology works and turning coursework and ideas into practical projects. My experience includes computer hardware research, business analysis, documentation and web development.</p><p class="intro">I’m continuously expanding my technical toolkit through academic work, independent practice and project-based learning. I use this portfolio to show what I’ve built and what I’m currently developing.</p></div>
+<div class="codebox"><span class="key">const</span> developer = {<br>&nbsp;&nbsp;name: <span class="value">"Samuel Odame Adjei-Larbi"</span>,<br>&nbsp;&nbsp;focus: <span class="value">"Technology & IT"</span>,<br>&nbsp;&nbsp;learning: <span class="value">["Web", "Systems", "Business"]</span>,<br>&nbsp;&nbsp;location: <span class="value">"Ghana"</span><br>};</div>
+</div></div></section>
+
+<section id="skills"><div class="container">
+<span class="eyebrow">02 / SKILLS</span><h2 class="title">Technical toolkit</h2><p class="intro">Skills developed through coursework, research and hands-on projects.</p>
+<div class="grid">
+<div class="card"><h3>Web Development</h3><p>Building responsive, accessible and professional web pages.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive Design</span><span class="tag">GitHub Pages</span></div></div>
+<div class="card"><h3>Computer Systems</h3><p>Researching, comparing and documenting computer hardware and system configurations.</p><div class="tags"><span class="tag">PC Hardware</span><span class="tag">Components</span><span class="tag">Workstations</span></div></div>
+<div class="card"><h3>Business Technology</h3><p>Applying business frameworks and research to technology-related projects.</p><div class="tags"><span class="tag">Market Analysis</span><span class="tag">Strategy</span><span class="tag">Research</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<span class="eyebrow">03 / PROJECTS</span><h2 class="title">Featured work</h2><p class="intro">Selected academic and personal projects. As new repositories are created, their GitHub links can be added here.</p>
+<div class="grid">
+<article class="card project"><div><h3>Personal GitHub Portfolio</h3><p>A responsive developer portfolio built with semantic HTML and CSS and deployed through GitHub Pages.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span></div></div><div class="foot"><a href="https://github.com/samuelodame" target="_blank">View GitHub →</a></div></article>
+<article class="card project"><div><h3>Computer Inventory Project</h3><p>Documented computer components and peripherals with their specifications and practical uses.</p><div class="tags"><span class="tag">IT</span><span class="tag">Hardware</span><span class="tag">Documentation</span></div></div><div class="foot"><span style="color:#8b949e">Academic project</span></div></article>
+<article class="card project"><div><h3>High-End Workstation Design</h3><p>Researched a no-budget performance workstation, comparing premium processors, motherboards, graphics, storage and peripherals.</p><div class="tags"><span class="tag">Hardware</span><span class="tag">Research</span><span class="tag">System Design</span></div></div><div class="foot"><span style="color:#8b949e">Academic project</span></div></article>
+<article class="card project"><div><h3>Cola Wars Case Study</h3><p>Explored competitive forces, substitutes and complements in a business strategy case study.</p><div class="tags"><span class="tag">Business</span><span class="tag">Strategy</span><span class="tag">Analysis</span></div></div><div class="foot"><span style="color:#8b949e">Academic project</span></div></article>
+<article class="card project"><div><h3>Market Attractiveness Analysis</h3><p>Applied market attractiveness concepts and competitive-force analysis to understand where organizations can compete.</p><div class="tags"><span class="tag">Research</span><span class="tag">Five Forces</span><span class="tag">Business</span></div></div><div class="foot"><span style="color:#8b949e">Academic project</span></div></article>
+<article class="card project"><div><h3>Digital Learning Portfolio</h3><p>A growing collection of coursework, project outputs and reflections demonstrating continuous technical development.</p><div class="tags"><span class="tag">Learning</span><span class="tag">Projects</span><span class="tag">Growth</span></div></div><div class="foot"><a href="#contact">Ask about my work →</a></div></article>
+</div></div></section>
+
+<section id="education"><div class="container">
+<span class="eyebrow">04 / EDUCATION</span><h2 class="title">Education & development</h2>
+<div class="card"><h3>Gomoa Gyaman Senior High School</h3><p>Senior high school education and foundation for continued academic and professional development.</p><br><h3>Current Development</h3><p>Continuing to build practical skills in information technology, web development, computer systems, business analysis and digital tools.</p></div>
+</div></section>
+
+<section id="contact"><div class="container">
+<span class="eyebrow">05 / CONTACT</span><h2 class="title">Let’s connect.</h2><p class="intro">For academic, technology or project-related opportunities, you can reach me through the channels below.</p>
+<div class="contact"><div class="card"><h3>Email</h3><p><a href="mailto:salarbie462@gmail.com">salarbie462@gmail.com</a></p></div><div class="card"><h3>Phone / WhatsApp</h3><p><a href="https://wa.me/233257474265" target="_blank" rel="noopener">+233 257 474 265</a></p></div><div class="card"><h3>GitHub</h3><p><a href="https://github.com/samuelodame" target="_blank" rel="noopener">github.com/samuelodame</a></p></div><div class="card"><h3>Open to opportunities</h3><p>Projects, collaboration, internships and technology-focused learning opportunities.</p></div></div>
+</div></section>
+
+<footer><div class="container">© 2026 Samuel Odame Adjei-Larbi · Built with HTML & CSS · Hosted on GitHub Pages</div></footer>
+</body>
+</html>
